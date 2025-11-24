@@ -1,0 +1,81 @@
+name: Update Starred Repos
+
+on:
+  schedule:
+    # Run every Sunday at midnight UTC
+    - cron: '0 0 * * 0'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch repository data and update README
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            // Fetch all repos for the org/user
+            const { data: repos } = await github.rest.repos.listForUser({
+              username: 'engindearing-projects',
+              type: 'owner',
+              sort: 'updated',
+              per_page: 100
+            });
+
+            // Sort by stars and take top 5
+            const topRepos = repos
+              .filter(repo => !repo.fork && !repo.private && repo.name !== '.github')
+              .sort((a, b) => b.stargazers_count - a.stargazers_count)
+              .slice(0, 5);
+
+            // Generate markdown table
+            let tableContent = '| Repository | Stars | Description |\n';
+            tableContent += '|------------|-------|-------------|\n';
+
+            for (const repo of topRepos) {
+              const desc = repo.description ? repo.description.substring(0, 60) : 'No description';
+              tableContent += `| [${repo.name}](${repo.html_url}) | ${repo.stargazers_count} | ${desc} |\n`;
+            }
+
+            // Read current README
+            let readme = fs.readFileSync('README.md', 'utf8');
+
+            // Replace content between markers
+            const startMarker = '<!-- START_STARRED_REPOS -->';
+            const endMarker = '<!-- END_STARRED_REPOS -->';
+
+            const startIndex = readme.indexOf(startMarker);
+            const endIndex = readme.indexOf(endMarker);
+
+            if (startIndex !== -1 && endIndex !== -1) {
+              readme = readme.substring(0, startIndex + startMarker.length) +
+                       '\n' + tableContent +
+                       readme.substring(endIndex);
+
+              fs.writeFileSync('README.md', readme);
+              console.log('README updated successfully');
+            } else {
+              console.log('Markers not found in README');
+            }
+
+      - name: Check for changes
+        id: check-changes
+        run: |
+          git diff --quiet README.md || echo "changes=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push changes
+        if: steps.check-changes.outputs.changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          git commit -m "chore: auto-update starred repositories"
+          git push
