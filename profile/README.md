@@ -2,43 +2,54 @@
 
 # Engindearing Projects
 
-**Building the Future of Tactical Awareness**
+**Building the Future of Tactical Awareness & Autonomous AI**
 
 [![TAK Ecosystem](https://img.shields.io/badge/TAK-Ecosystem-green?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0tMSAxNy45M2MtMy45NS0uNDktNy0zLjg1LTctNy45MyAwLS42Mi4wOC0xLjIxLjIxLTEuNzlMOSAxNXYxYzAgMS4xLjkgMiAyIDJ2MS45M3ptNi45LTIuNTRjLS4yNi0uODEtMS0xLjM5LTEuOS0xLjM5aC0xdi0zYzAtLjU1LS40NS0xLTEtMUg4di0yaDJjLjU1IDAgMS0uNDUgMS0xVjdoMmMxLjEgMCAyLS45IDItMnYtLjQxYzIuOTMgMS4xOSA1IDQuMDYgNSA3LjQxIDAgMi4wOC0uOCAzLjk3LTIuMSA1LjM5eiIvPjwvc3ZnPg==)](https://omni.engindearing.soy/)
-[![ATAK Plugins](https://img.shields.io/badge/ATAK-Plugin_Developer-blue?style=for-the-badge)]()
+[![Familiar](https://img.shields.io/badge/Familiar-AI_Terminal_Agent-cyan?style=for-the-badge)](https://familiar.run)
 [![Rust](https://img.shields.io/badge/Rust-Enthusiast-orange?style=for-the-badge&logo=rust)](https://www.rust-lang.org/)
 
-*Open-source TAK tools, ATAK plugins, and tactical systems development*
+*Open-source TAK tools, autonomous AI agents, and tactical systems development*
 
-[Website](https://omni.engindearing.soy/) | [Repositories](https://github.com/engindearing-projects?tab=repositories)
+[Website](https://omni.engindearing.soy/) | [Familiar](https://familiar.run) | [dtmhs](https://github.com/engindearing-projects/dtmhs) | [Repositories](https://github.com/engindearing-projects?tab=repositories)
 
 </div>
 
 ---
 
-## About
+## Familiar — AI That Lives in Your Terminal
 
-I specialize in building **open-source tactical awareness tools** for the TAK (Team Awareness Kit) ecosystem. My work bridges the gap between official government TAK software and the open-source community, creating interoperable solutions for emergency responders, search and rescue teams, and tactical operations.
+**[familiar.run](https://familiar.run)** is a persistent, local-first AI agent that lives in your terminal. It learns your patterns, trains its own models, and handles tasks autonomously while you sleep.
 
-### What I Do
+- **Persistent memory** — remembers context across sessions, builds knowledge over time
+- **Forge training pipeline** — trains local models on your data, runs nightly
+- **Multi-model routing** — intelligently routes tasks between cloud and local models
+- **Autonomous hands** — scheduled agents that curate, post, learn, and ship without supervision
+- **Terminal-native** — Bun + Ink TUI, connects via WebSocket, works from any device
 
-- **ATAK Plugin Development** - Native Java/Kotlin plugins for Android Team Awareness Kit
-- **TAK Server Solutions** - Federation, aggregation, and multi-server management
-- **Cross-Platform TAK Clients** - Mobile and desktop applications with full CoT support
-- **CoT (Cursor on Target) Tools** - Libraries, parsers, and ML-ready data pipelines
+```bash
+npm i -g familiar-run
+```
+
+> [GitHub](https://github.com/engindearing-projects/familiar) | [familiar.run](https://familiar.run)
 
 ---
 
-## Featured TAK Projects
+## dtmhs — Agent Forum
 
-### ATAK Plugins (Official Plugin Development)
+**[dtmhs](https://github.com/engindearing-projects/dtmhs)** is a forum built by and for autonomous agents. A place where AI agents can share what they've built, exchange ideas, and prove autonomy through real contributions.
 
-I develop native plugins for the official ATAK (Android Team Awareness Kit) application, extending its capabilities with custom features:
+---
+
+## TAK Ecosystem
+
+I specialize in building **open-source tactical awareness tools** for the TAK (Team Awareness Kit) ecosystem. My work bridges the gap between official government TAK software and the open-source community, creating interoperable solutions for emergency responders, search and rescue teams, and tactical operations.
+
+### ATAK Plugins
 
 | Plugin | Description | ATAK Versions |
 |--------|-------------|---------------|
-| [**Omni-COT**](https://github.com/engindearing-projects/omni-COT) | All-in-one CoT management plugin - send, receive, and manipulate Cursor on Target data directly in ATAK | 5.3, 5.4, 5.5 |
-| [**Omni-HUD**](https://github.com/engindearing-projects/omni-HUD) | Advanced HUD management and customization for enhanced situational awareness displays | 5.3, 5.4, 5.5 |
+| [**Omni-COT**](https://github.com/engindearing-projects/omni-COT) | All-in-one CoT management plugin | 5.3, 5.4, 5.5 |
+| [**Omni-HUD**](https://github.com/engindearing-projects/omni-HUD) | Advanced HUD management and customization | 5.3, 5.4, 5.5 |
 
 > Get the latest validated plugins at [omni.engindearing.soy](https://omni.engindearing.soy/)
 
@@ -46,10 +57,11 @@ I develop native plugins for the official ATAK (Android Team Awareness Kit) appl
 
 | Project | Description | Tech |
 |---------|-------------|------|
-| [**OmniTAK**](https://github.com/engindearing-projects/omni-TAK) | TAK client replica that federates data across multiple TAK servers simultaneously. Features a WASM plugin system supporting Rust, C/C++, Go, and Python. | ![Rust](https://img.shields.io/badge/-Rust-orange?style=flat-square&logo=rust) |
-| [**OmniTAK Mobile**](https://github.com/engindearing-projects/omniTAK-mobile) | Cross-platform TAK client with full ATAK compatibility. Native iOS/Android apps with real-time CoT messaging. Available on the App Store. | ![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=cplusplus) |
-| [**TAK Server Setup Guides**](https://github.com/engindearing-projects/ogTAK-Server-Setup-Guides) | Comprehensive guides for setting up official TAK Server from tak.gov, including PostgreSQL configuration and common pitfalls. | ![Docs](https://img.shields.io/badge/-Documentation-informational?style=flat-square) |
-| [**py-cot**](https://github.com/engindearing-projects/py-cot) | Machine Learning ready Python library for Cursor on Target (CoT) message parsing and generation. | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| [**OmniTAK**](https://github.com/engindearing-projects/omni-TAK) | TAK client replica with multi-server federation and WASM plugin system | Rust |
+| [**OmniTAK Mobile**](https://github.com/engindearing-projects/omniTAK-mobile) | Cross-platform TAK client with full ATAK compatibility | C++ |
+| [**TAK Server Guides**](https://github.com/engindearing-projects/ogTAK-Server-Setup-Guides) | Comprehensive setup guides for tak.gov server | Docs |
+| [**py-cot**](https://github.com/engindearing-projects/py-cot) | ML-ready Python library for CoT message parsing | Python |
+| [**ReconRaven**](https://github.com/engindearing-projects/ReconRaven) | Backpack-portable multi-RTL-SDR SIGINT device | Hardware |
 
 ---
 
@@ -65,54 +77,12 @@ I develop native plugins for the official ATAK (Android Team Awareness Kit) appl
 | [omni-HUD](https://github.com/engindearing-projects/omni-HUD) | 3 | ATAK HUD management plugin |
 <!-- END_STARRED_REPOS -->
 
-*Auto-updated weekly via GitHub Actions*
-
----
-
-## Technical Expertise
-
-<div align="center">
-
-### Languages & Frameworks
-
-![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-
-### Specializations
-
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=apple&logoColor=white)
-![WebAssembly](https://img.shields.io/badge/WebAssembly-654FF0?style=for-the-badge&logo=webassembly&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-
-</div>
-
----
-
-## ATAK Plugin Development Services
-
-I build custom ATAK plugins for organizations needing specialized tactical capabilities:
-
-- **Custom CoT Integrations** - Connect ATAK to your existing systems
-- **Sensor Data Overlays** - Display real-time sensor data on the tactical map
-- **Workflow Automation** - Automate repetitive tactical workflows
-- **Custom UI Components** - Specialized interfaces for your operational needs
-- **Multi-system Bridging** - Connect TAK to non-TAK systems via CoT translation
-
-> Interested in custom plugin development? Check out [omni.engindearing.soy](https://omni.engindearing.soy/) for more information.
-
 ---
 
 <div align="center">
 
 ### Connect
 
-*Building open-source tactical tools for those who need them most*
-
-**[omni.engindearing.soy](https://omni.engindearing.soy/)**
+**[omni.engindearing.soy](https://omni.engindearing.soy/)** | **[familiar.run](https://familiar.run)** | **[GitHub](https://github.com/engindearing-projects)**
 
 </div>
