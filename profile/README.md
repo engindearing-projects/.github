@@ -1,79 +1,76 @@
 <div align="center">
 
-# Engindearing Projects
+# Engindearing
 
-**Building the Future of Tactical Awareness & Autonomous AI**
+**Building tools that matter, for the people who need them.**
 
-[![TAK Ecosystem](https://img.shields.io/badge/TAK-Ecosystem-green?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0tMSAxNy45M2MtMy45NS0uNDktNy0zLjg1LTctNy45MyAwLS42Mi4wOC0xLjIxLjIxLTEuNzlMOSAxNXYxYzAgMS4xLjkgMiAyIDJ2MS45M3ptNi45LTIuNTRjLS4yNi0uODEtMS0xLjM5LTEuOS0xLjM5aC0xdi0zYzAtLjU1LS40NS0xLTEtMUg4di0yaDJjLjU1IDAgMS0uNDUgMS0xVjdoMmMxLjEgMCAyLS45IDItMnYtLjQxYzIuOTMgMS4xOSA1IDQuMDYgNSA3LjQxIDAgMi4wOC0uOCAzLjk3LTIuMSA1LjM5eiIvPjwvc3ZnPg==)](https://omni.engindearing.soy/)
 [![Familiar](https://img.shields.io/badge/Familiar-AI_Terminal_Agent-cyan?style=for-the-badge)](https://familiar.run)
-[![Rust](https://img.shields.io/badge/Rust-Enthusiast-orange?style=for-the-badge&logo=rust)](https://www.rust-lang.org/)
+[![TAK Ecosystem](https://img.shields.io/badge/TAK-Open_Source-green?style=for-the-badge)](https://omni.engindearing.soy/)
+[![Rust](https://img.shields.io/badge/Rust-Systems-orange?style=for-the-badge&logo=rust)](https://www.rust-lang.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Product-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 
-*Open-source TAK tools, autonomous AI agents, and tactical systems development*
+*Autonomous AI agents · open-source tactical awareness · humanitarian software · full-stack product*
 
-[Website](https://omni.engindearing.soy/) | [Familiar](https://familiar.run) | [dtmhs](https://github.com/engindearing-projects/dtmhs) | [Repositories](https://github.com/engindearing-projects?tab=repositories)
+[engindearing.soy](https://engindearing.soy) · [familiar.run](https://familiar.run) · [omni.engindearing.soy](https://omni.engindearing.soy/) · [Repositories](https://github.com/engindearing-projects?tab=repositories)
 
 </div>
 
 ---
 
-## Familiar — AI That Lives in Your Terminal
+## What I do
 
-**[familiar.run](https://familiar.run)** is a persistent, local-first AI agent that lives in your terminal. It learns your patterns, trains its own models, and handles tasks autonomously while you sleep.
+I'm **J Wylie**, founder of Engindearing. I build software across a wide stack — Rust systems, TypeScript product surfaces, Kotlin/Swift mobile, Python data tooling, and embedded/RF hardware — with a bias toward shipping things that help people who can't easily help themselves: emergency responders, families in crisis, and the agents and operators trying to support them.
 
-- **Persistent memory** — remembers context across sessions, builds knowledge over time
-- **Forge training pipeline** — trains local models on your data, runs nightly
-- **Multi-model routing** — intelligently routes tasks between cloud and local models
-- **Autonomous hands** — scheduled agents that curate, post, learn, and ship without supervision
-- **Terminal-native** — Bun + Ink TUI, connects via WebSocket, works from any device
+A few things I'm known for:
 
-```bash
-npm i -g familiar-run
-```
-
-> [GitHub](https://github.com/engindearing-projects/familiar) | [familiar.run](https://familiar.run)
+- **Autonomous AI systems** — persistent agents with their own memory, training pipelines, and 24/7 task loops
+- **Open-source TAK tools** — bridging official tak.gov software with the OSS community for SAR, emergency response, and tactical ops
+- **Humanitarian software** — tools that surface trafficking patterns, find missing people, and harden the vulnerable
+- **Full-stack product work** — landing pages to payment pipelines to mobile clients, end-to-end
 
 ---
 
-## dtmhs — Agent Forum
+## Featured projects
 
-**[dtmhs](https://github.com/engindearing-projects/dtmhs)** is a forum built by and for autonomous agents. A place where AI agents can share what they've built, exchange ideas, and prove autonomy through real contributions.
+### Autonomous AI
+
+| Project | What it is | Stack |
+|---|---|---|
+| [**Familiar**](https://github.com/engindearing-projects/familiar) | A persistent local-first AI that lives in your terminal — its own memory, its own training pipeline, runs hands while you sleep | TypeScript, Bun, Ink, Ollama |
+| [**dtmhs**](https://github.com/engindearing-projects/dtmhs) | A forum built by and for autonomous agents to share work and prove autonomy through real contributions | TypeScript |
+| [**cozyterm**](https://github.com/engindearing-projects/cozyterm) | A cozy terminal coach powered by Claude — makes the terminal approachable for everyone | TypeScript |
+
+### TAK & tactical awareness
+
+| Project | What it is | Stack |
+|---|---|---|
+| [**omni-TAK**](https://github.com/engindearing-projects/omni-TAK) | TAK client replica with multi-server federation and a WASM plugin system | Rust |
+| [**OmniTAK-Android**](https://github.com/engindearing-projects/OmniTAK-Android) | Open-source ATAK-compatible client (Play Store closed testing) | Kotlin, Jetpack Compose |
+| [**OmniTAK-iOS**](https://github.com/engindearing-projects/OmniTAK-iOS) | Open-source TAK client for iPhone and iPad | Swift, SwiftUI |
+| [**omni-COT**](https://github.com/engindearing-projects/omni-COT) | All-in-one CoT management ATAK plugin (5.3 / 5.4 / 5.5) | Java |
+| [**omni-HUD**](https://github.com/engindearing-projects/omni-HUD) | HUD management and customization for ATAK | Java |
+| [**ogTAK-Server-Setup-Guides**](https://github.com/engindearing-projects/ogTAK-Server-Setup-Guides) | Battle-tested setup guides for self-hosting tak.gov server | Docs |
+| [**ReconRaven**](https://github.com/engindearing-projects/ReconRaven) | Backpack-portable multi-RTL-SDR SIGINT device — UHF/VHF passive monitoring, drone hunting, anomaly DF | Hardware, Python |
+
+### Humanitarian & tooling
+
+| Project | What it is |
+|---|---|
+| [**tribefind-web**](https://github.com/engindearing-projects/tribefind-web) | AI-powered missing-persons search with financial anomaly detection to surface trafficking patterns |
+| [**py-cot**](https://github.com/engindearing-projects/py-cot) | ML-ready Python library for CoT message parsing |
+| [**xcode-mcp**](https://github.com/engindearing-projects/xcode-mcp) | MCP server for Xcode and iOS automation — build, simulate, manage Swift packages |
 
 ---
 
-## TAK Ecosystem
-
-I specialize in building **open-source tactical awareness tools** for the TAK (Team Awareness Kit) ecosystem. My work bridges the gap between official government TAK software and the open-source community, creating interoperable solutions for emergency responders, search and rescue teams, and tactical operations.
-
-### ATAK Plugins
-
-| Plugin | Description | ATAK Versions |
-|--------|-------------|---------------|
-| [**Omni-COT**](https://github.com/engindearing-projects/omni-COT) | All-in-one CoT management plugin | 5.3, 5.4, 5.5 |
-| [**Omni-HUD**](https://github.com/engindearing-projects/omni-HUD) | Advanced HUD management and customization | 5.3, 5.4, 5.5 |
-
-> Get the latest validated plugins at [omni.engindearing.soy](https://omni.engindearing.soy/)
-
-### Open Source TAK Tools
-
-| Project | Description | Tech |
-|---------|-------------|------|
-| [**OmniTAK**](https://github.com/engindearing-projects/omni-TAK) | TAK client replica with multi-server federation and WASM plugin system | Rust |
-| [**OmniTAK Mobile**](https://github.com/engindearing-projects/omniTAK-mobile) | Cross-platform TAK client with full ATAK compatibility | C++ |
-| [**TAK Server Guides**](https://github.com/engindearing-projects/ogTAK-Server-Setup-Guides) | Comprehensive setup guides for tak.gov server | Docs |
-| [**py-cot**](https://github.com/engindearing-projects/py-cot) | ML-ready Python library for CoT message parsing | Python |
-| [**ReconRaven**](https://github.com/engindearing-projects/ReconRaven) | Backpack-portable multi-RTL-SDR SIGINT device | Hardware |
-
----
-
-## Top Starred Repositories
+## Top repositories
 
 <!-- START_STARRED_REPOS -->
 | Repository | Stars | Description |
 |------------|-------|-------------|
-| [ogTAK-Server-Setup-Guides](https://github.com/engindearing-projects/ogTAK-Server-Setup-Guides) | 19 | Setup guides for local tak.gov server |
-| [omni-TAK](https://github.com/engindearing-projects/omni-TAK) | 15 | TAK client replica for multi-server federation |
-| [omniTAK-mobile](https://github.com/engindearing-projects/omniTAK-mobile) | 14 | Cross-platform TAK mobile client |
-| [omni-COT](https://github.com/engindearing-projects/omni-COT) | 13 | ATAK plugin for CoT management |
+| [omni-TAK](https://github.com/engindearing-projects/omni-TAK) | 24 | TAK client replica for multi-server federation |
+| [ogTAK-Server-Setup-Guides](https://github.com/engindearing-projects/ogTAK-Server-Setup-Guides) | 24 | Setup guides for local tak.gov server |
+| [omni-COT](https://github.com/engindearing-projects/omni-COT) | 17 | ATAK plugin for CoT management |
+| [ReconRaven](https://github.com/engindearing-projects/ReconRaven) | 4 | Backpack-portable multi-RTL-SDR SIGINT device |
 | [omni-HUD](https://github.com/engindearing-projects/omni-HUD) | 3 | ATAK HUD management plugin |
 <!-- END_STARRED_REPOS -->
 
@@ -81,8 +78,10 @@ I specialize in building **open-source tactical awareness tools** for the TAK (T
 
 <div align="center">
 
-### Connect
+### Get in touch
 
-**[omni.engindearing.soy](https://omni.engindearing.soy/)** | **[familiar.run](https://familiar.run)** | **[GitHub](https://github.com/engindearing-projects)**
+**[engindearing.soy](https://engindearing.soy)** · **[familiar.run](https://familiar.run)** · **[omni.engindearing.soy](https://omni.engindearing.soy/)**
+
+Hire me at [engindearing.soy/hire](https://engindearing.soy) · email [j@engindearing.soy](mailto:j@engindearing.soy)
 
 </div>
