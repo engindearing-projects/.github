@@ -50,7 +50,6 @@ A few things I'm known for:
 | [**omni-COT**](https://github.com/engindearing-projects/omni-COT) | All-in-one CoT management ATAK plugin (5.3 / 5.4 / 5.5) | Java |
 | [**omni-HUD**](https://github.com/engindearing-projects/omni-HUD) | HUD management and customization for ATAK | Java |
 | [**ogTAK-Server-Setup-Guides**](https://github.com/engindearing-projects/ogTAK-Server-Setup-Guides) | Battle-tested setup guides for self-hosting tak.gov server | Docs |
-| [**ReconRaven**](https://github.com/engindearing-projects/ReconRaven) | Backpack-portable multi-RTL-SDR SIGINT device — UHF/VHF passive monitoring, drone hunting, anomaly DF | Hardware, Python |
 
 ### Humanitarian & tooling
 
